@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <title>마이데이터</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/m-style.css">
+</head>
+<body>
+    <header>
+        <div class="sub-bg"></div>
+        <div class="wrap fl">
+            <h2 class="logo"><a href="index.html" class="fl"><img src="img/index/header/logo.png" alt="마이데이터 로고"></a></h2>
+            <div class="nav fl">
+                <ul id="gnb" class="fl pc">
+                    <li>
+                        <a href="sub1-1.html" class="main">이용안내</a>
+                        <ul class="sub">
+                            <li><a href="sub1-1.html">서비스 소개</a></li>
+                            <li><a href="#">마이데이터 소개</a></li>
+                            <li><a href="#">사업안내</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub2-1.html" class="main">통합지원 서비스</a>
+                        <ul class="sub">
+                            <li><a href="sub2-1.html">마이데이터 가이드북</a></li>
+                            <li><a href="#">전문가 상시자문</a></li>
+                            <li><a href="#">API 소재정보</a></li>
+                            <li><a href="#">지원사업 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3-1.html" class="main">마이데이터 서비스</a>
+                        <ul class="sub">
+                            <li><a href="sub3-1.html">서비스 맵</a></li>
+                            <li><a href="sub3-2.html">서비스 추천</a></li>
+                            <li><a href="#">서비스 체험</a></li>
+                            <li><a href="#">서비스 체험후기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub4-1.html" class="main">참여광장</a>
+                        <ul class="sub">
+                            <li><a href="sub4-1.html">마이데이터 MBTI</a></li>
+                            <li><a href="#">마이데이터 소식</a></li>
+                            <li><a href="#">설문참여</a></li>
+                            <li><a href="#">마이데이터 컨퍼런스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="nav-all" class="fl"><span class="xi-apps"></span></div>
+            </div>
+        </div>
+        
+        <div id="nav-all-popup">
+            <div class="wrap">
+                <div class="close xi-close"></div>
+                <h3>MENU</h3>
+                <div class="menu">
+                    <div class="cate1">
+                        <h4 class="title">이용안내</h4>
+                        <ul class="list fl">
+                            <li><a href="#">
+                                <strong>서비스소개</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>마이데이터 소개</strong>
+                            </a></li>
+                            <li>
+                                <a href="#"><strong>사업안내</strong></a>
+                                <ul class="inner-list">
+                                    <li><a href="#">사업 소개</a></li>
+                                    <li><a href="#">종합기반 조성</a></li>
+                                    <li><a href="#">사업화지원</a></li>
+                                    <li><a href="#">인식제고</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">
+                                <strong>공지사항</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>FAQ</strong>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="cate2">
+                        <h4 class="title">통합지원 서비스</h4>
+                        <ul class="list fl">
+                            <li>
+                                <a href="#"><strong>마이데이터 가이드북</strong></a>
+                                <ul class="inner-list">
+                                    <li><a href="#">절차별 점검사항</a></li>
+                                    <li><a href="#">법&middot;제도</a></li>
+                                    <li><a href="#">비즈니스 모델</a></li>
+                                    <li><a href="#">요소기술</a></li>
+                                    <li><a href="#">주요 기능 구축</a></li>
+                                    <li><a href="#">공통 요구사항</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">
+                                <strong>전문가 상시자문</strong>
+                            </a></li>
+                            <li>
+                                <a href="#"><strong>API 소재정보</strong></a>
+                                <ul class="inner-list">
+                                    <li><a href="#">소재정보 목록</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">
+                                <strong>지원사업 안내</strong>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="cate3">
+                        <h4 class="title">마이데이터 서비스</h4>
+                        <ul class="list fl">
+                            <li><a href="#">
+                                <strong>서비스 맵</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>서비스 추천</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>서비스 체험</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>서비스 체험후기</strong>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="cate4">
+                    <h4 class="title">참여광장</h4>
+                    <ul class="list fl">
+                        <li><a href="#">
+                            <strong>마이데이터 MBTI</strong>
+                        </a></li>
+                        <li><a href="#">
+                            <strong>마이데이터 소식</strong>
+                        </a></li>
+                        <li><a href="#">
+                            <strong>설문참여</strong>
+                        </a></li>
+                        <li><a href="#">
+                            <strong>마이데이터 컨퍼런스</strong>
+                        </a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="gnb-cover"></div>
+    <section id="sub-section">
+        <div id="sub-com" class="sub3 wrap"><!--서브 공통-->
+            <div id="sub-nav" class="fl">
+                <div><a href="index.html"><img src="img/sub/home.png" alt="홈"></a></div>
+                <div class="cate n1">
+                    <p class="list">
+                        <span class='title now'>마이데이터 서비스</span><!--값 입력-->
+                        <em>▼</em>
+                    </p>
+                    <ul class="sub-list">
+                        <li><!--[id="gnb"]에서 가져옴 (sub.js)--></li>
+                        <li><!--[id="gnb"]에서 가져옴 (sub.js)--></li>
+                        <li><!--[id="gnb"]에서 가져옴 (sub.js)--></li>
+                        <li><!--[id="gnb"]에서 가져옴 (sub.js)--></li>
+                    </ul>
+                </div>                
+                <div class="cate n2">
+                    <p class="list">
+                        <span class="title now">서비스 추천</span><!--값 입력-->
+                        <em>▼</em>
+                    </p>
+                    <ul class="sub-list">
+                        <!--[id="gnb"]에서 가져옴 (하단 script) -->
+                    </ul>
+                </div>
+            </div>
+            <h2>[class='now']에서 가져옴</h2>
+        </div>
+        <div id="sub3-2">
+            <div class="wrap">
+                <div class="cont cont1 on">
+                    <div class="title fl">
+                        <strong><span>01.</span>관심분야를 선택해주세요</strong>
+                        <span>최대 3개끼자 중복선택 가능합니다.</span>
+                    </div>
+                    <div class="list">
+                        <div class="item n0 fl" data-reco="n0">
+                            <em></em>
+                            <strong>건강/의료</strong>
+                        </div>
+                        <div class="item n1 fl" data-reco="n1">
+                            <em></em>
+                            <strong>금융</strong>
+                        </div>
+                        <div class="item n2 fl" data-reco="n2">
+                            <em></em>
+                            <strong>소비/지출</strong>
+                        </div>
+                        <div class="item n3 fl" data-reco="n3">
+                            <em></em>
+                            <strong>교통</strong>
+                        </div>
+                        <div class="item n4 fl" data-reco="n4">
+                            <em></em>
+                            <strong>공공/복지</strong>
+                        </div>
+                        <div class="item n5 fl" data-reco="n5">
+                            <em></em>
+                            <strong>유통</strong>
+                        </div>
+                        <div class="item n6 fl" data-reco="n6">
+                            <em></em>
+                            <strong>학술</strong>
+                        </div>
+                        <div class="item n7 fl" data-reco="n7">
+                            <em></em>
+                            <strong>교육/취업</strong>
+                        </div>
+                        <div class="item n8 fl" data-reco="n8">
+                            <em></em>
+                            <strong>문화/관광</strong>
+                        </div>
+                        <div class="item n9 fl" data-reco="n9">
+                            <em></em>
+                            <strong>종합관리</strong>
+                        </div>
+                    </div>
+                    <div class="btn fl">
+                        <div class="next">다음 단계로 <i class="xi-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="cont cont2">
+                    <div class="select">
+                        <p>
+                            <strong>[<span><!--.item.on strong에서 가져옴--></span>]</strong>을 선택하셨네요!
+                        </p>
+                    </div>
+                    <div class="title fl">
+                        <strong><span>02.</span>다음 중 어떤 서비스에 관심이 있으신가요?</strong>
+                    </div>
+                    <div class="list">
+                        <div class="item n0 fl" data-reco="n0-0">
+                            <em></em>
+                            <strong>건강유지</strong>
+                        </div>
+                        <div class="item n0 fl" data-reco="n0-1">
+                            <em></em>
+                            <strong>질병치료</strong>
+                        </div>
+                        <div class="item n0 fl" data-reco="n0-2">
+                            <em></em>
+                            <strong>다이어트</strong>
+                        </div>
+                        <div class="item n0 fl" data-reco="n0-3">
+                            <em></em>
+                            <strong>노후 관리</strong>
+                        </div>
+                        <div class="item n1 fl" data-reco="n1-0">
+                            <em></em>
+                            <strong>내 자산 현황</strong>
+                        </div>
+                        <div class="item n1 fl" data-reco="n1-1">
+                            <em></em>
+                            <strong>퇴직금</strong>
+                        </div>
+                        <div class="item n1 fl" data-reco="n1-2">
+                            <em></em>
+                            <strong>예금/적금</strong>
+                        </div>
+                        <div class="item n1 fl" data-reco="n1-3">
+                            <em></em>
+                            <strong>신용카드</strong>
+                        </div>
+                        <div class="item n1 fl" data-reco="n1-4">
+                            <em></em>
+                            <strong>재테크</strong>
+                        </div>
+                        <div class="item n1 fl" data-reco="n1-5">
+                            <em></em>
+                            <strong>대출</strong>
+                        </div>
+                        <div class="item n1 fl" data-reco="n1-6">
+                            <em></em>
+                            <strong>인증서</strong>
+                        </div>
+                        <div class="item n2 long fl" data-reco="n2-0">
+                            <em></em>
+                            <strong>소비/지출습관 관리</strong>
+                        </div>
+                        <div class="item n2 fl" data-reco="n2-1">
+                            <em></em>
+                            <strong>세금관리</strong>
+                        </div>
+                        <div class="item n2 fl" data-reco="n2-2">
+                            <em></em>
+                            <strong>생활비 절약</strong>
+                        </div>
+                        <div class="item n2 fl" data-reco="n2-3">
+                            <em></em>
+                            <strong>정기소비 관리</strong>
+                        </div>
+                        <div class="item n3 fl" data-reco="n3-0">
+                            <em></em>
+                            <strong>대리운전</strong>
+                        </div>
+                        <div class="item n3 fl" data-reco="n3-1">
+                            <em></em>
+                            <strong>대중교통</strong>
+                        </div>
+                        <div class="item n3 long fl" data-reco="n3-2">
+                            <em></em>
+                            <strong>거동불편자 교통보조</strong>
+                        </div>
+                        <div class="item n4 fl" data-reco="n4-0">
+                            <em></em>
+                            <strong>공공 서비스</strong>
+                        </div>
+                        <div class="item n4 fl" data-reco="n4-1">
+                            <em></em>
+                            <strong>복지혜택 추천</strong>
+                        </div>
+                        <div class="item n4 fl" data-reco="n4-2">
+                            <em></em>
+                            <strong>민원문서 출력</strong>
+                        </div>
+                        <div class="item n5 fl" data-reco="n5-0">
+                            <em></em>
+                            <strong>상권분석</strong>
+                        </div>
+                        <div class="item n5 fl" data-reco="n5-1">
+                            <em></em>
+                            <strong>재무관리</strong>
+                        </div>
+                        <div class="item n5 fl" data-reco="n5-2">
+                            <em></em>
+                            <strong>고객관리</strong>
+                        </div>
+                        <div class="item n6 fl" data-reco="n6-0">
+                            <em></em>
+                            <strong>이력관리</strong>
+                        </div>
+                        <div class="item n6 fl" data-reco="n6-1">
+                            <em></em>
+                            <strong>학술추천</strong>
+                        </div>
+                        <div class="item n7 fl" data-reco="n7-0">
+                            <em></em>
+                            <strong>취업희망</strong>
+                        </div>
+                        <div class="item n8 fl" data-reco="n8-0">
+                            <em></em>
+                            <strong>문화콘텐츠</strong>
+                        </div>
+                    </div>
+                    <div class="btn fl">
+                        <div class="prev"><i class="xi-angle-left"></i> 이전단계로</div>
+                        <div class="next">다음 단계로 <i class="xi-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="cont cont3">
+                    <div class="select">
+                        <p>
+                            <strong>[<span><!--.item.on strong에서 가져옴--></span>]</strong>을 선택하셨네요!
+                        </p>
+                    </div>
+                    <div class="title fl">
+                        <strong><span>03.</span>다음 중 어떤 서비스에 관심이 있으신가요?</strong>
+                    </div>
+                    <div class="list">
+                        <div class="item n0 n0-0 n0-3 fl">
+                            <em></em>
+                            <strong>건강 모니터링</strong>
+                        </div>
+                        <div class="item n0 n0-0 fl">
+                            <em></em>
+                            <strong>건강검진</strong>
+                        </div>
+                        <div class="item n0 n0-0 n0-2 fl">
+                            <em></em>
+                            <strong>생활습관 관리</strong>
+                        </div>
+                        <div class="item n0 n0-0 n0-2 fl">
+                            <em></em>
+                            <strong>식습관 관리</strong>
+                        </div>
+                        <div class="item n0 n0-1 fl">
+                            <em></em>
+                            <strong>병원진료</strong>
+                        </div>
+                        <div class="item n0 n0-1 long fl">
+                            <em></em>
+                            <strong>투약 및 통증 관리</strong>
+                        </div>
+                        <div class="item n0 n0-1 fl">
+                            <em></em>
+                            <strong>보험 관리</strong>
+                        </div>
+                        <div class="item n0 n0-1 fl">
+                            <em></em>
+                            <strong>병원별 진료관리</strong>
+                        </div>
+                        <div class="item n0 n0-3 fl">
+                            <em></em>
+                            <strong>질병관리</strong>
+                        </div>
+
+                        <div class="item n1 n1-0 fl">
+                            <em></em>
+                            <strong>재무현황</strong>
+                        </div>
+                        <div class="item n1 n1-0 n1-4 fl">
+                            <em></em>
+                            <strong>투자현황</strong>
+                        </div>
+                        <div class="item n1 n1-1 fl">
+                            <em></em>
+                            <strong>퇴직금현황</strong>
+                        </div>
+                        <div class="item n1 n1-2 fl">
+                            <em></em>
+                            <strong>예금</strong>
+                        </div>
+                        <div class="item n1 n1-2 fl">
+                            <em></em>
+                            <strong>적금</strong>
+                        </div>
+                        <div class="item n1 n1-3 fl">
+                            <em></em>
+                            <strong>소비현황</strong>
+                        </div>
+                        <div class="item n1 n1-3 fl">
+                            <em></em>
+                            <strong>서비스 추천</strong>
+                        </div>
+                        <div class="item n1 n1-4 fl">
+                            <em></em>
+                            <strong>투자 추천</strong>
+                        </div>
+                        <div class="item n1 n1-5 fl">
+                            <em></em>
+                            <strong>대출현황</strong>
+                        </div>
+                        <div class="item n1 n1-5 fl">
+                            <em></em>
+                            <strong>대출 상품</strong>
+                        </div>
+                        <div class="item n1 n1-6 fl">
+                            <em></em>
+                            <strong>발급현황</strong>
+                        </div>
+
+                        <div class="item n2 n2-0 long fl">
+                            <em></em>
+                            <strong>소비/지출 내역관리</strong>
+                        </div>
+                        <div class="item n2 n2-0 fl">
+                            <em></em>
+                            <strong>영수증 관리</strong>
+                        </div>
+                        <div class="item n2 n2-1 fl">
+                            <em></em>
+                            <strong>국세 및 지방세</strong>
+                        </div>
+                        <div class="item n2 n2-2 fl">
+                            <em></em>
+                            <strong>에너지 절약</strong>
+                        </div>
+
+                        <div class="item n3 n3-0 fl">
+                            <em></em>
+                            <strong>대리운전 기사</strong>
+                        </div>
+                        <div class="item n3 n3-0 fl">
+                            <em></em>
+                            <strong>대리운전 이용자</strong>
+                        </div>
+                        <div class="item n3 n3-1 long fl">
+                            <em></em>
+                            <strong>버스/전철/기차/항공</strong>
+                        </div>
+                        <div class="item n3 n3-1 fl">
+                            <em></em>
+                            <strong>택시</strong>
+                        </div>
+                        <div class="item n3 n3-1 fl">
+                            <em></em>
+                            <strong>공유서비스</strong>
+                        </div>
+                        <div class="item n3 n3-2 fl">
+                            <em></em>
+                            <strong>복지혜택</strong>
+                        </div>
+
+                        <div class="item n4 n4-0 fl">
+                            <em></em>
+                            <strong>기관별 서비스</strong>
+                        </div>
+                        <div class="item n4 n4-1 fl">
+                            <em></em>
+                            <strong>생활/병역</strong>
+                        </div>
+                        <div class="item n4 n4-2 fl">
+                            <em></em>
+                            <strong>증빙서류</strong>
+                        </div>
+
+                        <div class="item n5 n5-0 fl">
+                            <em></em>
+                            <strong>지역별</strong>
+                        </div>
+                        <div class="item n5 n5-1 fl">
+                            <em></em>
+                            <strong>매출관리</strong>
+                        </div>
+                        <div class="item n5 n5-2 fl">
+                            <em></em>
+                            <strong>고객관리</strong>
+                        </div>
+
+                        <div class="item n6 n6-0 fl">
+                            <em></em>
+                            <strong>연구실적현황</strong>
+                        </div>
+                        <div class="item n6 n6-0 fl">
+                            <em></em>
+                            <strong>연구이력관리</strong>
+                        </div>
+                        <div class="item n6 n6-0 fl">
+                            <em></em>
+                            <strong>이력서관리</strong>
+                        </div>
+                        <div class="item n6 n6-1 fl">
+                            <em></em>
+                            <strong>학술과제추천</strong>
+                        </div>
+
+                        <div class="item n7 n7-0 fl">
+                            <em></em>
+                            <strong>취업</strong>
+                        </div>
+                        <div class="item n7 n7-0 fl">
+                            <em></em>
+                            <strong>이직</strong>
+                        </div>
+
+                        <div class="item n8 n8-0 fl">
+                            <em></em>
+                            <strong>문화 콘텐츠 추천</strong>
+                        </div>
+                    </div>
+                    <div class="btn fl">
+                        <div class="prev"><i class="xi-angle-left"></i> 이전단계로</div>
+                        <div class="next">다음 단계로 <i class="xi-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="cont cont4">
+                    <div class="select">
+                        <p>당신을 위한 <strong>마이데이터 서비스</strong>는!</p>
+                    </div>
+                    <div class="title fl">
+                        <ul class="cate fl">
+                            <li class="on"><em>전체서비스</em></li>
+                            <li class="final"><!--.item.on strong에서 가져옴--></li>
+                            <li class="final"><!--.item.on strong에서 가져옴--></li>
+                            <li class="final"><!--.item.on strong에서 가져옴--></li>
+                        </ul>
+                    </div>
+                    <div class="reco reco1 on fl">
+                        <div class="item reco-app1">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>건강/의료</span>
+                                    <strong>클락패스</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">유전자 정보와 건강 정보를 연계한 보험분석 서비스</div>
+                            <div class="app-tag fl">
+                                <span>보험진단</span>
+                                <span>보험분석</span>
+                                <span>보장분석</span>
+                                <span>유전자검사</span>
+                                <span>생체나이정보조회</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                        <div class="item reco-app2">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>건강/의료</span>
+                                    <strong>메디패스</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">하나의 앱으로 자신과 관련된 모든 건강, 의료, 데이터를 모으고 이를 관리 활용할 수 있는 서비스</div>
+                            <div class="app-tag fl">
+                                <span>의료 정보 조회</span>
+                                <span>개인건강기록</span>
+                                <span>건강관리 서비스</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                        <div class="item reco-app3">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>건강/의료</span>
+                                    <strong>라이프월릿</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">건강검진, 처방전, 유전자검사, 장내미생물검사 등 의료&middot;건강 데이터 통합관리 및 맞춤 헬스케어 서비스</div>
+                            <div class="app-tag fl">
+                                <span>건강검진 관리</span>
+                                <span>처방전 관리</span>
+                                <span>진료 및 투약이력 관리</span>
+                                <span>리워드</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="reco reco2 fl">
+                        <div class="item reco-app1">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>카테고리</span>
+                                    <strong>추천하는앱</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">추천된 앱에 관한설명</div>
+                            <div class="app-tag fl">
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                        <div class="item reco-app2">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>카테고리</span>
+                                    <strong>추천하는앱</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">추천된 앱에 관한설명</div>
+                            <div class="app-tag fl">
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                        <div class="item reco-app3">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>카테고리</span>
+                                    <strong>추천하는앱</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">추천된 앱에 관한설명</div>
+                            <div class="app-tag fl">
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="reco reco3 fl">
+                        <div class="item reco-app1">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>카테고리</span>
+                                    <strong>추천하는앱</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">추천된 앱에 관한설명</div>
+                            <div class="app-tag fl">
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                        <div class="item reco-app2">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>카테고리</span>
+                                    <strong>추천하는앱</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">추천된 앱에 관한설명</div>
+                            <div class="app-tag fl">
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                        <div class="item reco-app3">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>카테고리</span>
+                                    <strong>추천하는앱</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">추천된 앱에 관한설명</div>
+                            <div class="app-tag fl">
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="reco reco4 fl">
+                        <div class="item reco-app1">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>카테고리</span>
+                                    <strong>추천하는앱</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">추천된 앱에 관한설명</div>
+                            <div class="app-tag fl">
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                        <div class="item reco-app2">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>카테고리</span>
+                                    <strong>추천하는앱</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">추천된 앱에 관한설명</div>
+                            <div class="app-tag fl">
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                        <div class="item reco-app3">
+                            <div class="app-title fl">
+                                <em></em>
+                                <p>
+                                    <span>카테고리</span>
+                                    <strong>추천하는앱</strong>
+                                </p>
+                            </div>
+                            <div class="app-desc">추천된 앱에 관한설명</div>
+                            <div class="app-tag fl">
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                                <span>관련태그</span>
+                            </div>
+                            <a href="#" class="fl">상세보기 <i class="xi-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="btn fl">
+                        <div>다시 추천받기</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="info">
+            <ul class="fl">
+                <li><a href="#" class="color">개인정보처리방침</a></li>
+                <li><a href="#">포털소개</a></li>
+                <li><a href="#">사업안내</a></li>
+                <li><a href="#">전문가/기업</a></li>
+            </ul>
+        </div>
+        <div class="add fl">
+            <address>
+                <span>서울특별시 중구 세종대로9길 42 부영빌딩 7, 8, 11층 한국데이터산업진흥원 (우 04513)</span><br>
+                <span>원장 : 윤혜정</span>
+                <span><a href="tel:0237085300">대표전화 : 02-3708-5300</a></span>
+                <span>팩스 : 02-318-5040</span>
+                <span><a href="mail:mydata@kdata.or.kr">mydata@kdata.or.kr</a></span><br>
+                <span>Copyright ⓒ KOREA Data Agency. All rights reserved.</span>
+            </address>
+            <div class="ico">
+                <ul class="sns fl">
+                    <li><a href="#"><img src="img/index/footer/fb.png" alt="페이스북 바로가기"></a></li>
+                    <li><a href="#"><img src="img/index/footer/yt.png" alt="유튜브 바로가기"></a></li>
+                    <li><a href="#"><img src="img/index/footer/bg.png" alt="블로그 바로가기"></a></li>
+                    <li><a href="#"><img src="img/index/footer/in.png" alt="인스타그램 바로가기"></a></li>
+                </ul>
+                <img src="img/index/footer/wa_mark.png" alt="과학기술정보통신부 WEB접근성 인증 WA마크 웹와치(WebWatch) 2022.12.21 ~ 2023.12.20">
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/sub.js"></script>
+    <script>
+        // #sub-nav .cate.n2 .sub-list 리스트 자동화 (sub.js)
+        nav_sub_auto(2);
+    </script>
+</body>
+</html>

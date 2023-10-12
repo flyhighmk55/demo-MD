@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <title>마이데이터</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/m-style.css">
+</head>
+<body>
+    <header>
+        <div class="sub-bg"></div>
+        <div class="wrap fl">
+            <h2 class="logo"><a href="index.html" class="fl"><img src="img/index/header/logo.png" alt="마이데이터 로고"></a></h2>
+            <div class="nav fl">
+                <ul id="gnb" class="fl pc">
+                    <li>
+                        <a href="sub1-1.html" class="main">이용안내</a>
+                        <ul class="sub">
+                            <li><a href="sub1-1.html">서비스 소개</a></li>
+                            <li><a href="#">마이데이터 소개</a></li>
+                            <li><a href="#">사업안내</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub2-1.html" class="main">통합지원 서비스</a>
+                        <ul class="sub">
+                            <li><a href="sub2-1.html">마이데이터 가이드북</a></li>
+                            <li><a href="#">전문가 상시자문</a></li>
+                            <li><a href="#">API 소재정보</a></li>
+                            <li><a href="#">지원사업 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3-1.html" class="main">마이데이터 서비스</a>
+                        <ul class="sub">
+                            <li><a href="sub3-1.html">서비스 맵</a></li>
+                            <li><a href="sub3-2.html">서비스 추천</a></li>
+                            <li><a href="#">서비스 체험</a></li>
+                            <li><a href="#">서비스 체험후기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub4-1.html" class="main">참여광장</a>
+                        <ul class="sub">
+                            <li><a href="sub4-1.html">마이데이터 MBTI</a></li>
+                            <li><a href="#">마이데이터 소식</a></li>
+                            <li><a href="#">설문참여</a></li>
+                            <li><a href="#">마이데이터 컨퍼런스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="nav-all" class="fl"><span class="xi-apps"></span></div>
+            </div>
+        </div>
+        
+        <div id="nav-all-popup">
+            <div class="wrap">
+                <div class="close xi-close"></div>
+                <h3>MENU</h3>
+                <div class="menu">
+                    <div class="cate1">
+                        <h4 class="title">이용안내</h4>
+                        <ul class="list fl">
+                            <li><a href="#">
+                                <strong>서비스소개</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>마이데이터 소개</strong>
+                            </a></li>
+                            <li>
+                                <a href="#"><strong>사업안내</strong></a>
+                                <ul class="inner-list">
+                                    <li><a href="#">사업 소개</a></li>
+                                    <li><a href="#">종합기반 조성</a></li>
+                                    <li><a href="#">사업화지원</a></li>
+                                    <li><a href="#">인식제고</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">
+                                <strong>공지사항</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>FAQ</strong>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="cate2">
+                        <h4 class="title">통합지원 서비스</h4>
+                        <ul class="list fl">
+                            <li>
+                                <a href="#"><strong>마이데이터 가이드북</strong></a>
+                                <ul class="inner-list">
+                                    <li><a href="#">절차별 점검사항</a></li>
+                                    <li><a href="#">법&middot;제도</a></li>
+                                    <li><a href="#">비즈니스 모델</a></li>
+                                    <li><a href="#">요소기술</a></li>
+                                    <li><a href="#">주요 기능 구축</a></li>
+                                    <li><a href="#">공통 요구사항</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">
+                                <strong>전문가 상시자문</strong>
+                            </a></li>
+                            <li>
+                                <a href="#"><strong>API 소재정보</strong></a>
+                                <ul class="inner-list">
+                                    <li><a href="#">소재정보 목록</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">
+                                <strong>지원사업 안내</strong>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="cate3">
+                        <h4 class="title">마이데이터 서비스</h4>
+                        <ul class="list fl">
+                            <li><a href="#">
+                                <strong>서비스 맵</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>서비스 추천</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>서비스 체험</strong>
+                            </a></li>
+                            <li><a href="#">
+                                <strong>서비스 체험후기</strong>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="cate4">
+                    <h4 class="title">참여광장</h4>
+                    <ul class="list fl">
+                        <li><a href="#">
+                            <strong>마이데이터 MBTI</strong>
+                        </a></li>
+                        <li><a href="#">
+                            <strong>마이데이터 소식</strong>
+                        </a></li>
+                        <li><a href="#">
+                            <strong>설문참여</strong>
+                        </a></li>
+                        <li><a href="#">
+                            <strong>마이데이터 컨퍼런스</strong>
+                        </a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="gnb-cover"></div><!-- 헤더 활성화시 body 명암 낮아짐 -->
+    <section id="sub-section">
+        <div id="sub-com" class="sub2 wrap"><!--서브 공통-->
+            <div id="sub-nav" class="fl">
+                <div><a href="index.html"><img src="img/sub/home.png" alt="홈"></a></div>
+                <div class="cate n1">
+                    <p class="list">
+                        <span class='title'>통합지원 서비스</span><!--값 입력-->
+                        <em>▼</em>
+                    </p>
+                    <ul class="sub-list">
+                        <li><!--[id="gnb"]에서 가져옴 (sub.js)--></li>
+                        <li><!--[id="gnb"]에서 가져옴 (sub.js)--></li>
+                        <li><!--[id="gnb"]에서 가져옴 (sub.js)--></li>
+                        <li><!--[id="gnb"]에서 가져옴 (sub.js)--></li>
+                    </ul>
+                </div>                
+                <div class="cate n2">
+                    <p class="list">
+                        <span class="title now">마이데이터 가이드북</span><!--값 입력-->
+                        <em>▼</em>
+                    </p>
+                    <ul class="sub-list">
+                        <!--[id="gnb"]에서 가져옴 (하단 script) -->
+                    </ul>
+                </div>
+            </div>
+            <h2>[class='now']에서 가져옴</h2>
+        </div>
+        <div id="sub2-1" class="wrap">
+        </div>
+    </section>
+    <footer>
+        <div class="info">
+            <ul class="fl">
+                <li><a href="#" class="color">개인정보처리방침</a></li>
+                <li><a href="#">포털소개</a></li>
+                <li><a href="#">사업안내</a></li>
+                <li><a href="#">전문가/기업</a></li>
+            </ul>
+        </div>
+        <div class="add fl">
+            <address>
+                <span>서울특별시 중구 세종대로9길 42 부영빌딩 7, 8, 11층 한국데이터산업진흥원 (우 04513)</span><br>
+                <span>원장 : 윤혜정</span>
+                <span><a href="tel:0237085300">대표전화 : 02-3708-5300</a></span>
+                <span>팩스 : 02-318-5040</span>
+                <span><a href="mail:mydata@kdata.or.kr">mydata@kdata.or.kr</a></span><br>
+                <span>Copyright ⓒ KOREA Data Agency. All rights reserved.</span>
+            </address>
+            <div class="ico">
+                <ul class="sns fl">
+                    <li><a href="#"><img src="img/index/footer/fb.png" alt="페이스북 바로가기"></a></li>
+                    <li><a href="#"><img src="img/index/footer/yt.png" alt="유튜브 바로가기"></a></li>
+                    <li><a href="#"><img src="img/index/footer/bg.png" alt="블로그 바로가기"></a></li>
+                    <li><a href="#"><img src="img/index/footer/in.png" alt="인스타그램 바로가기"></a></li>
+                </ul>
+                <img src="img/index/footer/wa_mark.png" alt="과학기술정보통신부 WEB접근성 인증 WA마크 웹와치(WebWatch) 2022.12.21 ~ 2023.12.20">
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/sub.js"></script>
+    <script>
+        // #sub-nav .cate.n2 .sub-list 리스트 자동화 (sub.js)
+        nav_sub_auto(1);
+    </script> 
+</body>
+</html>
